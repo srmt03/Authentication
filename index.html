@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Autenticação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='./css/style.css'>
+    <link rel='stylesheet' href='./css/colors.css'>
+    <link rel='stylesheet' href='./css/overlay.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f2b9e6a48.js" crossorigin="anonymous"></script>
+    <script src='/js/overlay-animation.js' defer></script>
+</head>
+<body>
+    <main>
+        <div class="container-main" id="container-main">
+            <div class="form-container">
+                <form class="form container-login">
+                    <h2 class="form-title">Entrar com</h2>
+                    <div class="container-icon-social">
+                        <a href="http://" class="icon-social"><i class="fa-brands fa-google"></i></a>
+                        <a href="http://" class="icon-social"><i class="fa-brands fa-apple"></i></a>
+                    </div>
+                    <span class="text-login-btnAction">ou utilize sua conta</span>
+                    <div class="container-input-login">
+                        <input type="email" placeholder="E-mail">
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <div class="container-btn-login">
+                        <a href="http://">Esqueci a senha!</a>
+                        <button class="btn btn-login">Acessar</button>
+                        <!-- <p class="mobile-text">
+                            Não tem conta?
+                            <a href="#" id="open-register-mobile">Registre-se</a>
+                        </p>                         -->
+                    </div>
+                </form>
+                <form class="form container-register">
+                    <h2 class="form-title">Criar Conta</h2>
+                    <div class="container-icon-social">
+                        <a href="http://" class="icon-social"><i class="fa-brands fa-google"></i></a>
+                        <a href="http://" class="icon-social"><i class="fa-brands fa-apple"></i></a>
+                    </div>
+                    <span class="text-register-btnAction">ou cadastre seu e-mail</span>
+                    <div class="container-input-login">
+                        <input type="number" placeholder="CPF">
+                        <input type="email" placeholder="E-mail">
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <div class="container-btn-register">
+                        <button class="btn btn-register">Cadastrar</button>
+                        <!-- <p class="mobile-text">
+                            Já tem conta?
+                            <a href="https://" id="open-login-mobile">Login</a>
+                        </p> -->
+                    </div>                    
+                </form>
+            </div>
+            <div class="overlay-presentation">
+                <div class="overlay">
+                    <h2 class="form-title-presentation">Já tem conta?</h2>
+                    <span class="text-btnAction-presentation">Para entrar na plataforma faça login com suas credenciais!</span>
+                    <button id="open-overlay-login" class="btn btn-presentation">Entrar</button>
+                </div>
+                <div class="overlay">
+                    <h2 class="form-title-presentation">É novo por aqui?</h2>
+                    <span class="text-btnAction-presentation">Cadastre-se e começe a usar nossa plataforma on-line!</span>
+                    <button id="open-overlay-register" class="btn btn-presentation">Cadastrar</button>
+                </div>                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
